@@ -1,0 +1,11 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+$red: #E1332D;
+$red-lightest: lighten($red, 70%);
+$red-lighter: lighten($red, 30%);
+$white: #fff;
+
+$orange: #FFD72A;
+$orange-darker: darken($orange, 70%);
+$orange-lighter: lighten($orange, 30%);

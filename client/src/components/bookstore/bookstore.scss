@@ -1,0 +1,66 @@
+@import '/globals.scss';
+
+.bookstore-container {
+  position: relative;
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+
+  .close, .close:focus, >* {
+    outline: none;
+    transition: none;
+  }
+
+  .book-add, .book-list {
+    position: relative;
+  }
+
+  .btn.delete {
+    border: 2px solid $red;
+    cursor: pointer;
+    line-height: 0.5;
+    padding: .375rem .3rem;
+  }
+
+  .search-bar {
+    .search {
+      display: inline-block;
+      width: 20%;
+      border: none;
+      border: solid 1px #ccc;
+      border-radius: 2rem;
+      transition: all .5s;
+
+      &:focus {
+        width: 50%;
+        outline: 0;
+      }
+    }
+
+    .add {
+      float: right;
+    }
+  }
+}
+
+//the modal
+.book-add-edit {
+  position: relative;
+  margin: auto;
+  width: 80%;
+
+  .input-suggestion {
+    position: relative;
+    .suggestion {
+      position: absolute;
+      top: 9px;
+      left: 10px;
+      opacity: 0.2;
+    }
+  }
+
+  input {
+    margin-bottom: 10px;
+  }
+}
+
