@@ -6,7 +6,7 @@
     "docker-client": "docker build -t redshade-client ./client",
     "docker-api": "docker build -t redshade-api ./server",
     "docker-run-api": "docker run --rm -d -p 5678:5678/tcp dummy-api:latest",
-    "docker-run-client": "docker run --rm -d -p 5678:5678/tcp dummy-client:latest",
+    "docker-run-client": "docker run --rm -d -p 1234:1234/tcp dummy-client:latest",
     "compose": "docker-compose up"
   }
 }
