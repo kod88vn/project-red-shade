@@ -8,7 +8,7 @@ A dummy project to test my ideas
 
 # Project highlights
 * a simulated bookstore, where user can search for books/author, and edit them
-* mongodb to store data, normalized. ElasticSearch to enable quick test search, denormilzed
+* mongodb to store data, normalized. ElasticSearch to enable quick text search, denormilzed
 * nodejs with Express for middleware
 * react/redux for front-end
 * docker compose to manage infrastructure
