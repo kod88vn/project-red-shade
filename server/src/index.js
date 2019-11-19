@@ -27,5 +27,5 @@ if (process.env.CLIENT_ENABLED) {
     stdio: ['inherit', process.stdout, process.stdout]
   };
   // Run parcel
-  spawn('parcel', [ 'watch', process.cwd() + '/client/src/index.html', '--out-dir', process.cwd() +  '/client/build/dist', '--cache-dir', process.cwd() + 'client/build/cache'], opts);
+  spawn('parcel', [ 'watch', process.cwd() + '/client/src/index.html', '--out-dir', process.cwd() +  '/build/dist', '--cache-dir', process.cwd() + '/build/cache'], opts);
 }

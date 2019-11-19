@@ -1,11 +1,11 @@
 FROM node:12
 
 # install and cache app dependencies
-COPY . /app
-RUN npm install
+COPY ./server /app/server
+COPY ./build /app/build
 
 WORKDIR /app
 
 EXPOSE 5678
 
-CMD node src/index.js
+CMD node server/src/index.js

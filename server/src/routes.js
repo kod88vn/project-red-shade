@@ -7,7 +7,7 @@ var path = require('path');
 const userRoutes = require(__dirname + '/users/users.js');
 const { echo, books, authors } = require(__dirname + '/controllers');
 
-app.use(express.static(path.resolve('client/build/dist')))
+app.use(express.static(path.resolve('build/dist')))
 
 // // other routes
 userRoutes(app);
@@ -17,7 +17,7 @@ authors(app);
 
 // default route
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve('client/build/dist/index.html'));
+  res.sendFile(path.resolve('build/dist/index.html'));
 });
 
 module.exports = app;
