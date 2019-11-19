@@ -46,10 +46,9 @@ Author.insertMany(authors, err => {
 
 Author.find(function(err, authors, count) {
   const authorIds = authors.map(a => a._id);
-  // console.log(authorIds);
 
   let books = [];
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 5000; i++) {
     const randomIndex = Math.ceil(Math.random()*10);
     const randomAuthorId = authorIds[randomIndex];
     let name = `${random.first()} ${random.middle()} ${random.last()}`

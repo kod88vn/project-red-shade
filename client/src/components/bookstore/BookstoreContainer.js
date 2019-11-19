@@ -44,10 +44,6 @@ class BookstoreContainer extends Component {
     const { bookData, deleteBook } = this.props;
     const { showModal, selected } = this.state;
 
-    // if(!bookData || !bookData.list) {
-    //   return <div>No books was found</div>
-    // }
-
     const { list=[], ...rest } = bookData;
 
     return (
@@ -57,7 +53,7 @@ class BookstoreContainer extends Component {
           <Button className="add cursor-pointer" onClick={() => this.openModal()}>Add More</Button>
         </div>
         <hr />
-        {(!bookData || !bookData.list) ? (<Books {...{ books: list, ...rest, deleteBook, onRowClick: (b) => this.onRowClick(b) }}/>) : null }
+        {(bookData && bookData.list) ? (<Books {...{ books: list, ...rest, deleteBook, onRowClick: (b) => this.onRowClick(b) }}/>) : null }
         <hr />
         <Modal show={showModal} onHide={() => this.closeModal()}>
           <Modal.Body>
